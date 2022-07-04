@@ -15,6 +15,16 @@ class CreateMasterPostsTable extends Migration
     {
         Schema::create('master_posts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->string('title');
+            $table->string('city');
+            $table->text('description');
+            $table->string('campaign_length');
+            $table->string('game_system');
+            $table->smallInteger('visible');
+            $table->string('media')->nullable();
+            $table->smallInteger('tot_players');
+
             $table->timestamps();
         });
     }

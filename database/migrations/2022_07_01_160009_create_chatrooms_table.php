@@ -15,6 +15,11 @@ class CreateChatroomsTable extends Migration
     {
         Schema::create('chatrooms', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('master_post_id')->nullable()->constrained();
+            $table->foreignId('player_post_id')->nullable()->constrained();
+            $table->string('name');
+            $table->text('description');
+
             $table->timestamps();
         });
     }
