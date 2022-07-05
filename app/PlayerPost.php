@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class PlayerPost extends Model
 {
     public function genre(){
-        return $this->belongsToMany('App\Model\Genre');
+        return $this->belongsToMany('App\Genre');
     }
     public function thematic(){
-        return $this->belongsToMany('App\Model\Thematic');
+        return $this->belongsToMany('App\Thematic');
     }
     public function chatroom(){
-        return $this->hasOne('App\Model\Chatroom');
+        return $this->hasOne('App\Chatroom');
     }
 }

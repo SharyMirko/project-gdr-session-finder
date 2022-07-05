@@ -7,16 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Chatroom extends Model
 {
     public function user(){
-        return $this->belongsToMany('App\Model\User');
+        return $this->belongsToMany('App\User');
     }
     public function messages(){
-        return $this->hasMany('App\Model\Messages');
+        return $this->hasMany('App\Messages');
 
     }
     public function masterPost(){
-        return $this->belongsTo('App\Model\MasterPost');
+        return $this->belongsTo('App\MasterPost');
     }
     public function playerPost(){
-        return $this->belongsTo('App\Model\PlayerPost');
+        return $this->belongsTo('App\PlayerPost');
     }
 }

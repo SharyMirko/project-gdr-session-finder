@@ -19,8 +19,12 @@ class DatabaseSeeder extends Seeder
         $this->call(PlayerPostSeeder::class);
         $this->call(ChatroomSeeder::class);
         $this->call(MessagesSeeder::class);
-
-
+        $this->call(ChatroomUserSeeder::class);
+        $this->call(GenreMasterPostSeeder::class);
+        $this->call(GenrePlayerPostSeeder::class);
+        $this->call(MasterPostUserSeeder::class);
+        $this->call(PlayerPostThematicSeeder::class);
+        $this->call(MasterPostThematicSeeder::class);
 
     }
 }
