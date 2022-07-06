@@ -1950,7 +1950,7 @@ var staticRenderFns = [function () {
     staticClass: "card-header"
   }, [_vm._v("Example Component")]), _vm._v(" "), _c("div", {
     staticClass: "card-body"
-  }, [_vm._v("\r\n                        I'm an example component.\r\n                    ")])])])])]);
+  }, [_vm._v("\n                        I'm an example component.\n                    ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -49474,8 +49474,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Erika\Desktop\boolean\project-gdr-session-finder\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Erika\Desktop\boolean\project-gdr-session-finder\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/shary/boolean/laravel/project-gdr-session-finder/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/shary/boolean/laravel/project-gdr-session-finder/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
