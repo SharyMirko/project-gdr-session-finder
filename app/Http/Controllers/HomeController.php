@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\MasterPost;
+use App\PlayerPost;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -11,10 +14,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+/*     public function __construct()
     {
         $this->middleware('auth');
-    }
+    } */
 
     /**
      * Show the application dashboard.
@@ -23,6 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $MasterPosts = MasterPost::where('visible', 1)->get();
+        $PlayerPosts = PlayerPost::where('visible', 1)->get();
+        $Users = User::all();
+        return view('index', compact('MasterPosts', 'PlayerPosts', 'Users'));
     }
 }
